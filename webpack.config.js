@@ -46,12 +46,18 @@ var options = {
       filename: 'popup.html',
       chunks: ['popup']
     }),
+    new HtmlWebpackPlugin({
+      template: './src/background.html',
+      filename: 'background.html',
+      chunks: ['background']
+    }),
     new WriteFilePlugin()
   ]
 }
 
 if (env.NODE_ENV === 'development') {
-  options.devtool = 'cheap-module-eval-source-map'
+  // options.devtool = 'cheap-module-eval-source-map'
+  options.devtool = 'inline-source-map'
 }
 
 module.exports = options

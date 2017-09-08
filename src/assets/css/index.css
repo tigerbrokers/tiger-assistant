@@ -1,0 +1,36 @@
+@import '~normalize.css';
+
+:root {
+  /* primary color */
+  /* grey */
+  --color-primary: #616a79;
+  --color-primary-dark: #28323f;
+  --color-primary-light: ##838d9e;
+
+  /* accent color */
+  /* yellow */
+  --color-accent: #ffe100;
+
+  /* sematic color */
+  /* green for success, safe, right */
+  --color-success: #78e397;
+  /* orange for alert, caution, warning */
+  --color-warn: #ff9529;
+  /* red for error, danger, wrong*/
+  --color-error: #ff4a4a;
+  /* blue for information */
+  --color-info: #218df2;
+
+  /* neutrals */
+  --color-white: #dddddd;
+  --color-black: #232c37;
+}
+
+body {
+  width: 400px;
+  height: 300px;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  overflow: hidden;
+  overflow-y: auto;
+}
